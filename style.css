@@ -426,7 +426,7 @@ section .title::after{
 }  
 /* The Close Button */
 .close {
-    color: #222;
+    color: #111;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -441,7 +441,7 @@ section .title::after{
 .modal-header {
     padding: 3px 20px;
     background-color: steelblue;
-    color: #222;
+    color: #111;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -454,7 +454,7 @@ section .title::after{
     position: relative;
     background-color: #ddd;
     padding: 0;
-    border: 2px solid #000;
+    border: 3px solid #000;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
@@ -512,66 +512,6 @@ section .title::after{
 }
 .contact .contact-content .info .sub-title{
     color: #333;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email{
-    margin-left: 10px;  
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-}
-.contact .right form .button{
-    height: 50px;
-    width: 170px;
-}
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid steelblue;
-    background: steelblue;
-    color: #fff;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.contact .right form .button button:hover{
-    color: steelblue;
-    background: none;
 }
 
 
