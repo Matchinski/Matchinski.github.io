@@ -353,6 +353,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid steelblue;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .skills .skills-content .left a:hover{
     color: steelblue;
@@ -403,6 +404,72 @@ section .title::after{
 
 
 
+/* The Modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    overflow: auto;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #ddd;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+}  
+/* The Close Button */
+.close {
+    color: #222;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+    padding: 3px 20px;
+    background-color: steelblue;
+    color: #222;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/* Modal Body */
+.modal-body {
+    padding: 5px 30px;
+}
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #ddd;
+    padding: 0;
+    border: 2px solid #000;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 5px;
+    border-width: 2px;
+}
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px;}
+  to {top: 0;}
+}
+
+
+
 /* Contact Section Styling */
 .contact{
     background-color: #ddd;
@@ -432,9 +499,12 @@ section .title::after{
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
+    width: 94%;
 }
 .contact .contact-content .row i{
     font-size: 25px;
+    width: 6%;
+    float: left;
     color: steelblue;
 }
 .contact .contact-content .info .head{
@@ -453,7 +523,7 @@ section .title::after{
     margin-bottom: 15px;
 }
 .contact .right form .textarea{
-    height: 40px;
+    height: 80px;
     width: 100%;
 }
 .contact .right form .name{
@@ -472,7 +542,7 @@ section .title::after{
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{

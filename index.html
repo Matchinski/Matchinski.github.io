@@ -142,7 +142,7 @@
 <!-- skills section start -->
 <section class="skills" id="skills">
     <div class="max-width">
-        <h2 class="title">My skills</h2>
+        <h2 class="title">My Skills</h2>
     
         <div class="skills-content">
             <div class="column left">
@@ -155,7 +155,20 @@
                     language and the one that I excel at the most. A majority of my python experience comes from my work with equity and cryptocurrency
                     data analysis. 
                 </p>
-                <a href="#">Read more</a>
+                <a id="myBtn">Read more</a>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h4>Areas of Knowledge and Experience</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>FiFiller text, soon to be filledFiller text, soon to be filledFiller text, soon to be filledller text, soon to be filled</p>
+                            <p>Some other text...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="column right">
@@ -204,7 +217,7 @@
 <!-- Contact Section Start -->
 <section class="contact" id="contact">
     <div class="max-width">
-        <h2 class="title">Contact me</h2>
+        <h2 class="title">Contact Me</h2>
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Get in Touch</div>
@@ -216,21 +229,22 @@
                     <div class="row">
                         <i class="fas fa-user"></i>
                         <div class="info">
-                            <div class="head">Name</div>
+                            <div class="head">Name:</div>
                                 <div class="sub-title">Mason Matchinski</div>
                         </div>
                     </div>
                     <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-laptop"></i>
                         <div class="info">
-                            <div class="head">Address</div>
-                                <div class="sub-title">Houghton, Michigan</div>
+                            <div class="head">LinkedIn:</div>
+                                <div class="sub-title">
+                                    <a href="https://www.linkedin.com/in/mason-matchinski/" target="_blank">https://www.linkedin.com/in/mason-matchinski/</a></div>
                         </div>
                     </div>
                     <div class="row">
                         <i class="fas fa-envelope"></i>
                         <div class="info">
-                            <div class="head">Email</div>
+                            <div class="head">Email:</div>
                                 <div class="sub-title">mjmatchi@mtu.edu</div>
                         </div>
                     </div>
@@ -252,7 +266,7 @@
                         <input type="text" placeholder="Subject" required>
                     </div>
                     <div class="field textarea">
-                        <changeit cols="30" rows="10" placeholder="Message.." required></changeit>
+                        <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Send message</button>
